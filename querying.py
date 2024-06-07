@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from langchain_groq import ChatGroq
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.embeddings import HuggingFaceInferenceAPIEmbeddings
 from langchain_qdrant import Qdrant
 from qdrant_client import QdrantClient
@@ -10,13 +10,13 @@ from langchain.prompts import PromptTemplate
 
 #Configuring API keys
 load_dotenv()
-groq_api_key = os.getenv('GROQ_API_KEY')
+google_api_key = os.getenv('GOOGLE_API_KEY')
 hf_token = os.getenv('HF_TOKEN')
 qdrant_api_key = os.getenv('QDRANT_API_KEY')
 qdrant_url = os.getenv("QDRANT_URL")
 
-#Instantiating the Chat model
-chat = ChatGroq(groq_api_key= groq_api_key, model= "llama3-8b-8192")
+#Instantiating the LLM
+chat = ChatGoogleGenerativeAI(model = 'gemini-pro', google_api_key = google_api_key)
 
 #Embedding Model 
 embedding = HuggingFaceInferenceAPIEmbeddings(api_key= hf_token)
