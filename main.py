@@ -1,7 +1,7 @@
 import streamlit as st 
 from querying import generate_response
 
-st.title("LangChat")
+st.title("🦜 LangChat")
 
 if "messages" not in st.session_state.keys():
     st.session_state.messages = [{"role": "assistant", "content": "Chat with Langchain docs"}]
