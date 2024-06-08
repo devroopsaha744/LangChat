@@ -16,7 +16,7 @@ qdrant_api_key = os.getenv('QDRANT_API_KEY')
 qdrant_url = os.getenv('QDRANT_URL')
 
 #Instantiating the LLM
-chat = ChatGoogleGenerativeAI(model = 'gemini-pro', google_api_key = google_api_key)
+chat = ChatGoogleGenerativeAI(model = 'gemini-1.5-pro-latest', google_api_key = google_api_key)
 
 #Embedding Model 
 embedding = HuggingFaceInferenceAPIEmbeddings(api_key= hf_token)
