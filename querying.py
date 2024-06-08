@@ -13,7 +13,7 @@ load_dotenv()
 google_api_key = os.getenv('GOOGLE_API_KEY')
 hf_token = os.getenv('HF_TOKEN')
 qdrant_api_key = os.getenv('QDRANT_API_KEY')
-qdrant_url = os.getenv("QDRANT_URL")
+qdrant_url = "https://2cd21b4f-0bc8-433d-9b3f-45d49542ffa1.us-east4-0.gcp.cloud.qdrant.io"
 
 #Instantiating the LLM
 chat = ChatGoogleGenerativeAI(model = 'gemini-pro', google_api_key = google_api_key)
