@@ -5,5 +5,5 @@ The langchain "how_to" guides has been used as the knowledge-base: [How To Guide
 
 Try this app now: [langchat](https://langchat-ai.streamlit.app/)
 
-To get a thorough analysis of my approach, read this article: [langchat](https://medium.com/@datafreakai/enhancing-code-documentation-with-rag-based-q-a-systems-a-new-frontier-in-developer-support-b9f2042031fe)
+To get a thorough analysis of my approach, read my article: [Article](https://medium.com/@datafreakai/enhancing-code-documentation-with-rag-based-q-a-systems-a-new-frontier-in-developer-support-b9f2042031fe)
 
